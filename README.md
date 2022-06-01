@@ -1,11 +1,8 @@
 # karma-failure-snapshots-qunit
 
-[![NPM version](https://badge.fury.io/js/karma-failure-snapshots-qunit.png)](http://badge.fury.io/js/karma-failure-snapshots-qunit)
-[![Dependency Status](https://david-dm.org/prantlf/karma-failure-snapshots-qunit.svg)](https://david-dm.org/prantlf/karma-failure-snapshots-qunit)
-[![devDependency Status](https://david-dm.org/prantlf/karma-failure-snapshots-qunit/dev-status.svg)](https://david-dm.org/prantlf/karma-failure-snapshots-qunit#info=devDependencies)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-
-[![NPM Downloads](https://nodei.co/npm/karma-failure-snapshots-qunit.png?downloads=true&stars=true)](https://www.npmjs.com/package/karma-failure-snapshots-qunit)
+[![Latest version](https://img.shields.io/npm/v/karma-failure-snapshots-qunit)
+ ![Dependency status](https://img.shields.io/librariesio/release/npm/karma-failure-snapshots-qunit)
+](https://www.npmjs.com/package/karma-failure-snapshots-qunit)
 
 [Karma] plugin for taking snapshots of the web browser state whenever a [QUnit] test fails.
 
@@ -112,10 +109,6 @@ The `ensureFailureSnapshot` will take a failure snapshot only if there is a fail
 ## Contributing
 
 In lieu of a formal styleguide, take care to maintain the existing coding style.  Add unit tests for any new or changed functionality. Lint and test your code using Grunt.
-
-## Release History
-
-* 2019-07-15   v0.0.1   Initial release
 
 ## License
 
