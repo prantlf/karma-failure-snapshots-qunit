@@ -1,7 +1,7 @@
 # karma-failure-snapshots-qunit
 
 [![Latest version](https://img.shields.io/npm/v/karma-failure-snapshots-qunit)
- ![Dependency status](https://img.shields.io/librariesio/release/npm/karma-failure-snapshots-qunit)
+![Dependency status](https://img.shields.io/librariesio/release/npm/karma-failure-snapshots-qunit)
 ](https://www.npmjs.com/package/karma-failure-snapshots-qunit)
 
 [Karma] plugin for taking snapshots of the web browser state whenever a [QUnit] test fails.
@@ -39,9 +39,9 @@ This plugin has to be aded to the `frameworks` array in the Karma configuration 
 
     frameworks: [ 'failure-snapshots-qunit', ... ],
 
-You will add it with the main plugin, which you will place in back of it. When you add the `QUnit` framework plugin, make sure, that you *place the failure snapshot plugins before it*. For example, a typical configuration:
+You will add it with the main plugin, which you will place in back of it. When you add the `QUnit` framework plugin, make sure, that you _place the failure snapshot plugins before it_. For example, a typical configuration:
 
-    module.exports = function (config) {
+    export default function (config) {
       config.set({
         frameworks: [
           'failure-snapshots-qunit', 'failure-snapshots', 'qunit'
@@ -51,7 +51,6 @@ You will add it with the main plugin, which you will place in back of it. When y
     }
 
 See the [common plugin options] for more information about the customization and the [main plugin configuration] for more information.
-
 
 ## Writing Tests
 
@@ -108,7 +107,7 @@ The `ensureFailureSnapshot` will take a failure snapshot only if there is a fail
 
 ## Contributing
 
-In lieu of a formal styleguide, take care to maintain the existing coding style.  Add unit tests for any new or changed functionality. Lint and test your code using Grunt.
+In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using Grunt.
 
 ## License
 

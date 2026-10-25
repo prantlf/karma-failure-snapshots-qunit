@@ -1,54 +1,38 @@
 {
   "name": "karma-failure-snapshots-qunit",
   "version": "0.0.2",
-  "main": "lib/index.js",
   "description": "Karma plugin for taking snapshots of the web browser whenever a QUnit test fails.",
+  "keywords": [
+    "karma-adapter",
+    "karma-plugin",
+    "qunit",
+    "screenshots",
+    "snapshots"
+  ],
+  "homepage": "https://github.com/prantlf/karma-failure-snapshots-qunit",
+  "bugs": {
+    "url": "https://github.com/prantlf/karma-failure-snapshots-qunit/issues"
+  },
   "license": "MIT",
   "author": {
     "name": "Ferdinand Prantl",
     "email": "prantlf@gmail.com",
     "url": "https://github.com/prantlf"
   },
-  "keywords": [
-    "karma-plugin",
-    "karma-adapter",
-    "qunit",
-    "snapshots",
-    "screenshots"
-  ],
-  "homepage": "https://github.com/prantlf/karma-failure-snapshots-qunit",
   "repository": {
     "type": "git",
     "url": "https://github.com/prantlf/karma-failure-snapshots-qunit"
   },
-  "bugs": {
-    "url": "https://github.com/prantlf/karma-failure-snapshots-qunit/issues"
-  },
-  "github": "https://github.com/prantlf/karma-failure-snapshots-qunit",
   "files": [
     "lib"
   ],
+  "main": "lib/index.js",
   "scripts": {
-    "test": "standard --fix --verbose"
-  },
-  "release": {
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      [
-        "@semantic-release/github",
-        {
-          "failComment": false
-        }
-      ],
-      "@semantic-release/git"
-    ]
+    "test": "oxlint"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "^6.0.1",
-    "@semantic-release/git": "^10.0.1",
-    "standard": "17.0.0"
-  }
+    "oxfmt": "^0.74.0",
+    "oxlint": "^1.89.0"
+  },
+  "github": "https://github.com/prantlf/karma-failure-snapshots-qunit"
 }
